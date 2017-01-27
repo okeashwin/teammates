@@ -200,12 +200,12 @@ A coverage lower bound is enforced via `AllJsTests.java`, lower than which the b
 For Java tests, choose `Coverage as TestNG Test` instead of the usual `Run as TestNG Test` to run the specified test or test suite.
 The coverage will be reported in Eclipse after the test run is over.
 
-Alternatively, use Gradle to run the tests, and obtain the coverage data with `jacocoTestReport` task, i.e:
+Alternatively, use Gradle to run the tests, and obtain the coverage data with `jacocoReport` task, i.e:
 ```
 ./gradlew travisTests
-./gradlew jacocoTestReport
+./gradlew jacocoReport
 ```
-The report can be found in the `build/reports/jacoco/test/` directory.
+The report can be found in the `build/reports/jacoco/jacocoReport/` directory.
 
 For JavaScript unit tests, simply open `allJsUnitTests.html` and tick `Enable coverage`, or run `AllJsTests.java`.
 The coverage will be reported immediately in the test page.
